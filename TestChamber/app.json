@@ -1,0 +1,36 @@
+{
+  "id": "77127321-c720-4591-a0f9-4b040d3060ad",
+  "name": "Test Chamber",
+  "publisher": "UpdateAB",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50060,
+      "to": 50069
+    },
+    {
+      "from": 55060,
+      "to": 55069
+    }
+  ],
+  "showMyCode": true,
+  "target": "OnPrem",
+  "supportedLocales": [
+    "en-US"
+  ],
+  "runtime": "6.0",
+  "features": [
+    "TranslationFile"
+  ]
+}

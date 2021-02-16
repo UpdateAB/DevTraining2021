@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "path": "C:\\temp\\demo\\ApertureSuppliers\\TestChamber"
+    },
+    {
+      "path": "C:\\temp\\demo\\ApertureSuppliers\\TestChamberTest"
+    },
+    {
+      "path": "C:\\temp\\demo\\ApertureSuppliers\\ContractBilling"
+    },
+    {
+      "path": "C:\\temp\\demo\\ApertureSuppliers\\ContractBillingTest"
+    },
+    {
+      "name": "ApertureSuppliers",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "al.codeAnalyzers": [
+      "${CodeCop}",
+      "${UICop}",
+      "${PerTenantCop}"
+    ],
+    "al.enableCodeAnalysis": true,
+    "al.enableCodeActions": true
+  }
+}

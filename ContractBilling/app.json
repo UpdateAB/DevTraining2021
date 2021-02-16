@@ -1,0 +1,32 @@
+{
+  "id": "f312129e-a375-49ce-9e5b-9d8e570606c4",
+  "name": "Contract Billing",
+  "publisher": "UpdateAB",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50070,
+      "to": 50079
+    }
+  ],
+  "showMyCode": true,
+  "target": "OnPrem",
+  "supportedLocales": [
+    "en-US"
+  ],
+  "runtime": "6.0",
+  "features": [
+    "TranslationFile"
+  ]
+}
