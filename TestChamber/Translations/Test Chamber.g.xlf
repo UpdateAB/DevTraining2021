@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Test Chamber">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2970386785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPD AS Test Chamber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Test Chamber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2970386785 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Test Chamber - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2970386785 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Test Chamber - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2970386785 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Test Chamber - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2970386785 - Field 1090351696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Test Chamber - Field Active - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2970386785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPD AS Test Chamber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chamber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2970386785 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chamber - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2970386785 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chamber - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2970386785 - Control 1090351696 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Active field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chamber - Control Active - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 465897976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPD AS Test Chambers</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chambers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 465897976 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chambers - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 465897976 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chambers - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 465897976 - Control 1090351696 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Active field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chambers - Control Active - Property ToolTip</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
