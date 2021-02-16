@@ -20,6 +20,11 @@
       "${PerTenantCop}"
     ],
     "al.enableCodeAnalysis": true,
-    "al.enableCodeActions": true
+    "al.enableCodeActions": true,
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.ObjectNamePrefix": "UPD AS",
+    "CRS.OnSaveAlFileAction": "Rename"
   }
 }
