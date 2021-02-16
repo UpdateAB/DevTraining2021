@@ -1,36 +1,33 @@
 codeunit 70061 "UPD AS Chamber Master Record"
 {
+    //[FEATURE] Test Chamber Master Record
     Subtype = Test;
 
     var
         Customer: Record Customer;
         Item: Record Item;
-        LibrarySales: Codeunit "Library - Sales";
+        UPDASTestChamber: Record "UPD AS Test Chamber";
+        LibraryInventory: Codeunit "Library - Inventory";
         LibraryRandom: Codeunit "Library - Random";
-
-
-
-    //[FEATURE] Test Chamber Master Record
-
+        LibrarySales: Codeunit "Library - Sales";
+        isInitialized: Boolean;
 
     //[SCENARIO #0001] Create New Test Chamber
     [Test]
     procedure CreateNewTestChamber()
-    var
-        Chamber: Record "UPD AS Test Chamber";
     begin
+        Initialize();
+
         //[GIVEN] Customer
-        LibrarySales.CreateCustomer(Customer);
 
         //[WHEN] User creates new Test Chamber
-        Chamber.Init();
-        Chamber."Customer No." := Customer."No.";
-        Chamber.Code := CopyStr(LibraryRandom.RandText(20), 1, MaxStrLen(Chamber.Code));
-        Chamber.Insert(true);
+        CreateChamberForCustomer();
 
         //[THEN] Test Chamber exists for Customer
-        Chamber.Find('=');
+        UPDASTestChamber.Find('=');
     end;
+
+
 
 
     //[SCENARIO #0002] Customer is Deleted
@@ -64,4 +61,24 @@ codeunit 70061 "UPD AS Chamber Master Record"
     //[WHEN] User creates new Test Chamber
     //[THEN] Test Chamber exists for Customer
 
+
+    local procedure Initialize()
+    begin
+        if isInitialized then
+            exit;
+
+        LibrarySales.CreateCustomer(Customer);
+        LibraryInventory.CreateItem(Item);
+
+        isInitialized := true;
+    end;
+
+
+    local procedure CreateChamberForCustomer()
+    begin
+        UPDASTestChamber.Init();
+        UPDASTestChamber."Customer No." := Customer."No.";
+        UPDASTestChamber.Code := CopyStr(LibraryRandom.RandText(20), 1, MaxStrLen(UPDASTestChamber.Code));
+        UPDASTestChamber.Insert(true);
+    end;
 }
