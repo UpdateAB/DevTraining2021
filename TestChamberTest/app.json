@@ -58,7 +58,7 @@
   ],
   "showMyCode": true,
   "target": "OnPrem",
-  "supportedLocales": [],
+  "supportedLocales": ["en-US"],
   "runtime": "6.0",
   "features": []
 }
