@@ -7,11 +7,16 @@ codeunit 70061 "UPD AS Chamber Master Record"
         Customer: Record Customer;
         Item: Record Item;
         UPDASTestChamber: Record "UPD AS Test Chamber";
+
+        Assert: Codeunit Assert;
+        LibraryChamber: Codeunit "Chamber Library Functions";
         LibraryInventory: Codeunit "Library - Inventory";
         LibraryRandom: Codeunit "Library - Random";
         LibrarySales: Codeunit "Library - Sales";
-        isInitialized: Boolean;
 
+
+        LibraryUtility: Codeunit "Library - Utility";
+        isInitialized: Boolean;
     //[SCENARIO #0001] Create New Test Chamber
     [Test]
     procedure CreateNewTestChamber()
@@ -21,10 +26,10 @@ codeunit 70061 "UPD AS Chamber Master Record"
         //[GIVEN] Customer
 
         //[WHEN] User creates new Test Chamber
-        CreateChamberForCustomer();
+        LibraryChamber.CreateChamberForCustomer(UPDASTestChamber, Customer);
 
         //[THEN] Test Chamber exists for Customer
-        UPDASTestChamber.Find('=');
+        VerifyTestChamberExists();
     end;
 
 
@@ -63,9 +68,19 @@ codeunit 70061 "UPD AS Chamber Master Record"
 
 
     local procedure Initialize()
+    var
+        NoSeries: Record "No. Series";
+        NoSeriesLine: Record "No. Series Line";
+        ChamberSetup: Record "UPD AS Chamber Setup";
     begin
         if isInitialized then
             exit;
+
+        ChamberSetup.Init();
+        LibraryUtility.CreateNoSeries(NoSeries, true, false, false);
+        LibraryUtility.CreateNoSeriesLine(NoSeriesLine, NoSeries.Code, '', '');
+        ChamberSetup."Chamber No Series." := NoSeries.Code;
+        ChamberSetup.Insert(true);
 
         LibrarySales.CreateCustomer(Customer);
         LibraryInventory.CreateItem(Item);
@@ -74,11 +89,9 @@ codeunit 70061 "UPD AS Chamber Master Record"
     end;
 
 
-    local procedure CreateChamberForCustomer()
+    local procedure VerifyTestChamberExists()
     begin
-        UPDASTestChamber.Init();
-        UPDASTestChamber."Customer No." := Customer."No.";
-        UPDASTestChamber.Code := CopyStr(LibraryRandom.RandText(20), 1, MaxStrLen(UPDASTestChamber.Code));
-        UPDASTestChamber.Insert(true);
+        UPDASTestChamber.Find('=');
+        Assert.AreNotEqual(UPDASTestChamber.Code, '', LibraryChamber.GetFieldOnTableTxt(UPDASTestChamber.FieldCaption(Code), UPDASTestChamber.TableCaption));
     end;
 }

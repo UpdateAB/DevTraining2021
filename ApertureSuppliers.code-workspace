@@ -25,6 +25,11 @@
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.ObjectNamePrefix": "UPD AS",
-    "CRS.OnSaveAlFileAction": "Rename"
+    "CRS.OnSaveAlFileAction": "Rename",
+    "alOutline.codeActionsOnSave": [
+      "SortVariables","SortProperties"
+    ],
+    "alOutline.fixCodeCopMissingParenthesesOnSave": true,
+    "editor.codeActionsOnSave": {"source.fixAll": true}
   }
 }
