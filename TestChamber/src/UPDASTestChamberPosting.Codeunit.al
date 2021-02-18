@@ -6,6 +6,7 @@ codeunit 50060 "UPD AS Test Chamber Posting"
         TestChamberLedger: Record "UPD AS Chamber Ledger";
         i: Integer;
     begin
+        Error('PostedSalesLineToTestChamberLedger %1', SalesLines."Qty. to Ship");
         for i := 1 to SalesLines."Qty. to Ship" do begin
             TestChamberLedger.Init();
             TestChamberLedger.Validate("Customer No.", SalesHeader."Sell-to Customer No.");
@@ -37,6 +38,7 @@ codeunit 50060 "UPD AS Test Chamber Posting"
         SalesLines: Record "Sales Line";
 
     begin
+        //Error('Event Fired, %1, %2', SalesHeader.Ship, SalesHeader."UPD AS Test Chamber Code");
         if not SalesHeader.Ship then
             exit;
         if SalesHeader."UPD AS Test Chamber Code" = '' then
@@ -49,7 +51,9 @@ codeunit 50060 "UPD AS Test Chamber Posting"
         if SalesLines.FindSet() then
             repeat
                 PostedSalesLineToTestChamberLedger(SalesHeader, SalesLines);
-            until SalesLines.Next() < 1;
+            until SalesLines.Next() < 1
+        else
+            Error('No shipping lines found.');
     end;
 
 }
