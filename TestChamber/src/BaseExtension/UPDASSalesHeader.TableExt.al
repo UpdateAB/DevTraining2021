@@ -6,7 +6,7 @@ tableextension 50060 "UPD AS Sales Header" extends "Sales Header"
         {
             Caption = 'Test Chamber Code';
             DataClassification = CustomerContent;
-            TableRelation = "UPD AS Test Chamber" where("Customer No." = field("Sell-to Customer No."));
+            TableRelation = "UPD AS Test Chamber".Code where("Customer No." = field("Sell-to Customer No."));
         }
     }
 }
