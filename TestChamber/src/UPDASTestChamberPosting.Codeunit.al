@@ -53,7 +53,7 @@ codeunit 50060 "UPD AS Test Chamber Posting"
                 PostedSalesLineToTestChamberLedger(SalesHeader, SalesLines);
             until SalesLines.Next() < 1
         else
-            Error('No shipping lines found.');
+            Error('No shipping lines found with Qty to Ship.');
     end;
 
 }
