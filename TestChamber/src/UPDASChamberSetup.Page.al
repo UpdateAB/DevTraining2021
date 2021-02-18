@@ -15,9 +15,12 @@ page 50062 "UPD AS Chamber Setup"
                 field("Chamber No Series."; Rec."Chamber No Series.")
                 {
                     ApplicationArea = All;
+                    Importance = Promoted;
                     ToolTip = 'Specifies the value of the Chamber No Series. field';
                 }
             }
+
+
         }
     }
 
