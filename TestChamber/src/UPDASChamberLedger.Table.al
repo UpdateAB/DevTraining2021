@@ -50,4 +50,31 @@ table 50062 "UPD AS Chamber Ledger"
         }
     }
 
+    procedure ActivateItem()
+    var
+        IsHandled: Boolean;
+    begin
+        OnBeforeActivateItem(IsHandled);
+        if IsHandled then
+            exit;
+        Rec.Validate(Active, true);
+        OnAfterActivateItem();
+    end;
+
+    procedure DeactivateItem()
+    begin
+
+    end;
+
+
+    [BusinessEvent(false)]
+    local procedure OnAfterActivateItem()
+    begin
+    end;
+
+    [BusinessEvent(false)]
+    local procedure OnBeforeActivateItem(var IsHandled: Boolean)
+    begin
+    end;
+
 }

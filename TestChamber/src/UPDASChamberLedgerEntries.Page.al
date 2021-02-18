@@ -69,7 +69,7 @@ page 50063 "UPD AS Chamber Ledger Entries"
 
                 trigger OnAction()
                 begin
-                    Rec.Active := true;
+                    Rec.ActivateItem();
                     Rec.Modify(true);
                 end;
             }
@@ -85,7 +85,7 @@ page 50063 "UPD AS Chamber Ledger Entries"
 
                 trigger OnAction()
                 begin
-                    Rec.Active := false;
+                    Rec.DeactivateItem();
                     Rec.Modify(true);
                 end;
             }
