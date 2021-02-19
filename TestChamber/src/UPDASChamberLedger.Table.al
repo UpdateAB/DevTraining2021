@@ -2,6 +2,7 @@ table 50062 "UPD AS Chamber Ledger"
 {
     Caption = 'Chamber Ledger';
     DataClassification = ToBeClassified;
+    DrillDownPageId = "UPD AS Chamber Ledger Entries";
 
     fields
     {
