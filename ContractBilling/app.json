@@ -10,7 +10,14 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "77127321-c720-4591-a0f9-4b040d3060ad",
+      "name": "Test Chamber",
+      "publisher": "UpdateAB",
+      "version": "1.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "17.0.0.0",
   "application": "17.0.0.0",
