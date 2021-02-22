@@ -10,5 +10,10 @@ tableextension 50070 "UPD AS CB Chamber Setup" extends "UPD AS Chamber Setup"
             DecimalPlaces = 0 : 2;
             MinValue = 0;
         }
+        field(50071; "UPD AS Contract G/L Acct."; Code[20])
+        {
+            Caption = 'Contract G/L Account';
+            TableRelation = "G/L Account" where("Direct Posting" = const(true));
+        }
     }
 }
