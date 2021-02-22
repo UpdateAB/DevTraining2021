@@ -59,14 +59,23 @@ table 50062 "UPD AS Chamber Ledger"
         if IsHandled then
             exit;
         Rec.Validate(Active, true);
+        Rec.Modify(true);
         OnAfterActivateItem();
     end;
 
     procedure DeactivateItem()
+    var
+        IsHandled: Boolean;
     begin
-
+        OnBeforeDeactivateItem(IsHandled);
+        if IsHandled then
+            exit;
+        if Confirm('Are you sure you want to deactivate this item?', true) then begin
+            Rec.Validate(Active, false);
+            Rec.Modify(true);
+            OnAfterDeactivateItem();
+        end;
     end;
-
 
     [BusinessEvent(false)]
     local procedure OnAfterActivateItem()
@@ -75,6 +84,16 @@ table 50062 "UPD AS Chamber Ledger"
 
     [BusinessEvent(false)]
     local procedure OnBeforeActivateItem(var IsHandled: Boolean)
+    begin
+    end;
+
+    [BusinessEvent(false)]
+    local procedure OnBeforeDeactivateItem(IsHandled: Boolean)
+    begin
+    end;
+
+    [BusinessEvent(false)]
+    local procedure OnAfterDeactivateItem()
     begin
     end;
 
