@@ -46,8 +46,38 @@ codeunit 70073 "UPD AS Generate Contract Inv."
         //[THEN] Sales Invoice Line
         //[THEN] Sales Invoice line has Contract Value as price
         VerifySalesInvoiceLine();
-
     end;
+
+
+    [Test]
+    [HandlerFunctions('DeactivateConfirmHandler,InvoicesCreatedHandler,VerifySalesInvoiceList')]
+    procedure BasicInvoiceCreationAndUINavigate()
+    var
+        UPDASContractList: TestPage "UPD AS Contract List";
+    begin
+        //[SCENARIO #0110] Basic Invoice Created
+        //[GIVEN] Customer
+        //[GIVEN] Test Chamber
+        //[GIVEN] Contract
+        //[GIVEN] Item
+        //[GIVEN] Test Chamber Ledger Entries
+        //[GIVEN] Setup table has G/L Account
+        Initialize();
+        DeactivateChamberLedgerEntries();
+
+        //[GIVEN] Routine is Run
+        GenerateContractInvoices();
+
+        //[WHEN] Ribbon "open invoice" button is clicked
+        UPDASContractList.OpenView();
+        UPDASContractList.GoToKey(UPDASTestChamber."Customer No.", UPDASTestChamber.Code);
+        UPDASContractList.OpenInvoices.Invoke();
+
+        //[THEN] Should have 1 result
+        // Handler will verify
+    end;
+
+
     /*
  
  888    888        d8888 888b    888 8888888b.  888      8888888888 8888888b.   .d8888b.  
@@ -80,6 +110,18 @@ codeunit 70073 "UPD AS Generate Contract Inv."
         WrongResultMessageErr: Label 'UI Expected ''%1'' but got ''%2''';
     begin
         Assert.AreEqual(Message, ExpectedMessage, StrSubstNo(WrongResultMessageErr, ExpectedMessage, Message));
+    end;
+
+    [PageHandler]
+    procedure VerifySalesInvoiceList(var SalesInvoiceList: TestPage "Sales Invoice List")
+    var
+        EntryCount: Integer;
+    begin
+        SalesInvoiceList.First();
+        repeat
+            EntryCount += 1;
+        until not SalesInvoiceList.Next();
+        Assert.AreEqual(1, EntryCount, 'Unexpected number of sales invoices');
     end;
 
     /*
