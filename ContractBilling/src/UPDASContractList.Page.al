@@ -52,6 +52,50 @@ page 50070 "UPD AS Contract List"
             }
         }
     }
+    actions
+    {
+        area(Navigation)
+        {
+            action(OpenInvoices)
+            {
+                ApplicationArea = All;
+                Caption = 'Open Invoices';
+                Image = "Invoicing-View";
+                ToolTip = 'Navigate to all Open Invoice for this Test Chamber';
+
+                trigger OnAction()
+                var
+                    SalesHeader: Record "Sales Header";
+                    SalesInvList: Page "Sales Invoice List";
+                begin
+                    Clear(SalesInvList);
+                    SalesHeader.SetRange("Sell-to Customer No.", rec."Customer No.");
+                    SalesHeader.SetRange("UPD AS Test Chamber Code", rec."Chamber Code");
+                    SalesInvList.SetTableView(SalesHeader);
+                    SalesInvList.Run();
+                end;
+            }
+            action(PostedInvoices)
+            {
+                ApplicationArea = All;
+                Caption = 'Posted Invoices';
+                Image = "Invoicing-View";
+                ToolTip = 'Navigate to all Posted Invoice for this Test Chamber';
+
+                trigger OnAction()
+                var
+                    SalesInvHeader: Record "Sales Invoice Header";
+                    SalesInvList: Page "Posted Sales Invoices";
+                begin
+                    Clear(SalesInvList);
+                    SalesInvHeader.SetRange("Sell-to Customer No.", rec."Customer No.");
+                    SalesInvHeader.SetRange("UPD AS Test Chamber Code", rec."Chamber Code");
+                    SalesInvList.SetTableView(SalesInvHeader);
+                    SalesInvList.Run();
+                end;
+            }
+        }
+    }
 
     trigger OnAfterGetRecord()
     begin

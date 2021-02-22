@@ -83,6 +83,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control ContractValue - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 1108669589 - Action 4166000106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Action OpenInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Action 4166000106 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Navigate to all Open Invoice for this Test Chamber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Action OpenInvoices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Action 2332977709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Action PostedInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Action 2332977709 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Navigate to all Posted Invoice for this Test Chamber</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Action PostedInvoices - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Report 111532214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Create Contract Invoices</source>
           <note from="Developer" annotates="general" priority="2"></note>
