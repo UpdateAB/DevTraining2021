@@ -1,19 +1,19 @@
 codeunit 50060 "UPD AS Test Chamber Posting"
 {
 
-    local procedure PostedSalesLineToTestChamberLedger(SalesHeader: Record "Sales Header"; SalesLines: Record "Sales Line")
+    local procedure PostedSalesLineToTestChamberLedger(SalesHeader: Record "Sales Header"; SalesShipmentLines: Record "Sales Shipment Line")
     var
         TestChamberLedger: Record "UPD AS Chamber Ledger";
         i: Integer;
     begin
-        //Error('PostedSalesLineToTestChamberLedger %1', SalesLines."Qty. to Ship");
-        for i := 1 to SalesLines."Qty. to Ship" do begin
+        for i := 1 to SalesShipmentLines.Quantity do begin
             TestChamberLedger.Init();
             TestChamberLedger.Validate("Customer No.", SalesHeader."Sell-to Customer No.");
             TestChamberLedger.Validate("Chamber Code", SalesHeader."UPD AS Test Chamber Code");
-            TestChamberLedger.Validate("Item No.", SalesLines."No.");
+            TestChamberLedger."Entry No." := 0;
+            TestChamberLedger.Validate("Item No.", SalesShipmentLines."No.");
             TestChamberLedger.Validate(Active, true);
-            TestChamberLedger.Validate(Value, SalesLines."Unit Price");
+            TestChamberLedger.Validate(Value, SalesShipmentLines."Unit Price");
             TestChamberLedger.Validate("Delivery Date", SalesHeader."Posting Date");
             TestChamberLedger.Insert(true);
         end;
@@ -35,7 +35,7 @@ codeunit 50060 "UPD AS Test Chamber Posting"
         WhseReceiv: Boolean
     )
     var
-        SalesLines: Record "Sales Line";
+        SalesShipmentLines: Record "Sales Shipment Line";
 
     begin
         //Error('Event Fired, %1, %2', SalesHeader.Ship, SalesHeader."UPD AS Test Chamber Code");
@@ -44,16 +44,14 @@ codeunit 50060 "UPD AS Test Chamber Posting"
         if SalesHeader."UPD AS Test Chamber Code" = '' then
             exit;
 
-        SalesLines.SetRange("Document Type", SalesHeader."Document Type");
-        SalesLines.SetRange("Document No.", SalesHeader."No.");
-        SalesLines.SetRange(Type, SalesLines.Type::Item);
-        SalesLines.SetFilter("Qty. to Ship", '<>0');
-        if SalesLines.FindSet() then
+        SalesShipmentLines.SetRange("Document No.", SalesShptHdrNo);
+        SalesShipmentLines.SetRange(Type, SalesShipmentLines.Type::Item);
+        if SalesShipmentLines.FindSet() then
             repeat
-                PostedSalesLineToTestChamberLedger(SalesHeader, SalesLines);
-            until SalesLines.Next() < 1;
-        //else
-        //    Error('No shipping lines found.');
+                PostedSalesLineToTestChamberLedger(SalesHeader, SalesShipmentLines);
+            until SalesShipmentLines.Next() < 1
+        else
+            Error('No shipping lines found.');
     end;
 
 }
