@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Contract Billing">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 4071658411 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPD AS Contract</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4071658411 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4071658411 - Field 690875945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Chamber Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Field Chamber Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4071658411 - Field 1090351696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Field Active - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4071658411 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4071658411 - Field 4184859284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Invoice Generated Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Field Last Invoice Generated Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4071658411 - Field 3293648673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Installed Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table UPD AS Contract - Field Active Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPD AS Contract List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer No. field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 690875945 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Chamber Code field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control Chamber Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 1090351696 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Active field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control Active - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 4184859284 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Last Invoice Generated Date field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control Last Invoice Generated Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 3293648673 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Installed Value field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control Active Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 1422267179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contract Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control ContractValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1108669589 - Control 1422267179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Contract Value based on Setup % Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Contract List - Control ContractValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 111532214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Contract Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report UPD AS Create Contract Inv. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 111532214 - NamedType 4066268498" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created %1 Sales Invoices</source>
+          <note from="Developer" annotates="general" priority="2">%1</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report UPD AS Create Contract Inv. - NamedType RoutineCompleteMsg</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2075359409 - Control 3305302459 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1596011778">
+          <source>Contract</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension UPD AS CB Chamber Setup - Control UPD ASContract - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2075359409 - Control 3239347108 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1596011778">
+          <source>Specifies the value of the UPD AS Contract Value Rate field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension UPD AS CB Chamber Setup - Control UPD AS Contract Value Rate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2075359409 - Control 2526652906 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1596011778">
+          <source>Specifies the value of the Contract G/L Acct. field to be used on Sales Invoices.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension UPD AS CB Chamber Setup - Control UPD AS Contract G/L Acct. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2075359409 - Field 3239347108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1596011778">
+          <source>Contract Value Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension UPD AS CB Chamber Setup - Field UPD AS Contract Value Rate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2075359409 - Field 2526652906 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1596011778">
+          <source>Contract G/L Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension UPD AS CB Chamber Setup - Field UPD AS Contract G/L Acct. - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
