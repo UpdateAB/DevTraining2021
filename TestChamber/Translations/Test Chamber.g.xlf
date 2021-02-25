@@ -178,6 +178,66 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledger Entries - Action CancelAction - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3376372156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPD AS Chamber Ledgers Part</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer No. field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 690875945 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Chamber Code field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Chamber Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Item No. field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 1090351696 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Active field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Active - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 83221844 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Delivery Date field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Delivery Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 1131619133 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Value field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Entry No. field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Action 1950833259 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Action Activate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Action 1950833259 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>bleh</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Action Activate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Action 751227956 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deactivate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Action Deactivate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3376372156 - Action 751227956 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>bleh</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Chamber Ledgers Part - Action Deactivate - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 465897976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>UPD AS Test Chambers</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -197,6 +257,16 @@
           <source>Specifies the value of the Active field</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chambers - Control Active - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 330338729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UPDASTestChamberAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page UPD AS Test Chamber API - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3139036460 - Control 2835826414 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Which Test Chamber is getting the items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension UPD AD Chamber Sales Order - Control UPD AS Test Chamber Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 2720621961 - Action 1848505448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Test Chambers</source>
