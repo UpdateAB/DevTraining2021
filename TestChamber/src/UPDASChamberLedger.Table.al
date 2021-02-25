@@ -42,6 +42,12 @@ table 50062 "UPD AS Chamber Ledger"
             Caption = 'Delivery Date';
             DataClassification = CustomerContent;
         }
+
+        field(50; "Last Invoiced Date"; Date)
+        {
+            Caption = 'Last Invoiced Date';
+            DataClassification = CustomerContent;
+        }
     }
     keys
     {
