@@ -1,0 +1,36 @@
+
+# Auth info
+Authorization: Basic upddev:redacted
+
+# Test Fetching the chamber list
+
+###
+
+http://dev-training:7048/BC/api/upd/aperture/v1.0/testChambers
+Authorization: Basic admin:redacted
+
+###
+
+http://dev-training:7048/BC/api/upd/aperture/v1.0/testChambers('10000','K00020')/ledgerEntries
+Authorization: Basic upddev:redacted
+
+###
+
+# Test Single Ledger Entry
+
+http://dev-training:7048/BC/api/upd/aperture/v1.0/testChambers('10000','K00020')/ledgerEntries('10000','K00020',4)
+Authorization: Basic upddev:redacted
+
+###
+
+# Test Single Ledger Entry - Meta
+
+http://dev-training:7048/BC/api/upd/aperture/v1.0/testChambers('10000','K00020')/$entity
+Authorization: Basic upddev:redacted
+
+###
+
+# Test Deactivate Single Ledger Entry
+
+POST http://dev-training:7048/BC/api/upd/aperture/v1.0/testChambers('10000','K00020')/ledgerEntries('10000','K00020',4)/Microsoft.NAV.pageDeactivateItem
+Authorization: Basic upddev:redacted

@@ -27,6 +27,10 @@ page 50061 "UPD AS Test Chamber"
                     ToolTip = 'Specifies the value of the Active field';
                 }
             }
+            part(LedgerEntries; "UPD AS Chamber Ledgers Part")
+            {
+                SubPageLink = "Customer No." = field("Customer No."), "Chamber Code" = field(Code);
+            }
         }
     }
 
