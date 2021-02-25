@@ -65,12 +65,16 @@ table 50062 "UPD AS Chamber Ledger"
 
     procedure DeactivateItem()
     var
+        Confirmed: Boolean;
         IsHandled: Boolean;
     begin
         OnBeforeDeactivateItem(IsHandled);
         if IsHandled then
             exit;
-        if Confirm('Are you sure you want to deactivate this item?', true) then begin
+        Confirmed := true;
+        if GuiAllowed then
+            Confirmed := Confirm('Are you sure you want to deactivate this item?', true);
+        if Confirmed then begin
             Rec.Validate(Active, false);
             Rec.Modify(true);
             OnAfterDeactivateItem();
