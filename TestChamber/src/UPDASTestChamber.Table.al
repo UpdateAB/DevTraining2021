@@ -31,6 +31,12 @@ table 50060 "UPD AS Test Chamber"
             DataClassification = SystemMetadata;
             TableRelation = "No. Series";
         }
+
+        field(50; "Serial No."; Text[100])
+        {
+            Caption = 'Serial No.';
+            DataClassification = CustomerContent;
+        }
     }
     keys
     {

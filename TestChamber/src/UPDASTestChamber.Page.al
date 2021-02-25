@@ -26,6 +26,11 @@ page 50061 "UPD AS Test Chamber"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Active field';
                 }
+                field("Serial No."; Rec."Serial No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Serial No. field';
+                }
             }
             part(LedgerEntries; "UPD AS Chamber Ledgers Part")
             {
